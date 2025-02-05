@@ -34,7 +34,7 @@ class InstallData implements InstallDataInterface
         $customerSetup = $this->customerSetupFactory->create(['setup' => $setup]);
 
         $customerSetup->addAttribute(
-            \Magento\Customer\Model\Customer::ENTITY, 'phone_num', [
+            \Magento\Customer\Model\Customer::ENTITY, 'acx_phone_num', [
             'type' => 'varchar',
             'label' => 'Phone Number',
             'input' => 'text',
@@ -48,7 +48,7 @@ class InstallData implements InstallDataInterface
         ]);
 
 
-        $attribute = $customerSetup->getEavConfig()->getAttribute('customer', 'phone_num')
+        $attribute = $customerSetup->getEavConfig()->getAttribute('customer', 'acx_phone_num')
             ->addData(['used_in_forms' => [
                 'adminhtml_customer',
                 'adminhtml_checkout',
