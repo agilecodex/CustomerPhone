@@ -39,7 +39,7 @@ class InstallData implements InstallDataInterface
             'label' => 'Phone Number',
             'input' => 'text',
             'source' => '',
-            'required' => true,
+            'required' => false,
             'visible' => true,
             'unique' => true,
             'position' => 100,
