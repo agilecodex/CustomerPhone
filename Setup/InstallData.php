@@ -1,6 +1,4 @@
 <?php
-
-
 namespace Acx\CustomerPhone\Setup;
 
 use Magento\Framework\Setup\InstallDataInterface;
